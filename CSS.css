@@ -1,0 +1,126 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Title Section */
+.title-section {
+    background-color: #010f01;
+    color: white;
+    padding: 20px 0;
+}
+
+.title-section h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.title-section h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.title-section h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.title-section .divider {
+    width: 0%;
+    height: 0px;
+    background-color: rgb(12, 11, 11);
+    margin-top: 0px;
+}
+
+/* White Section (Main Content) */
+.white-section {
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 70%;
+}
+
+.attendance-image {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+img {
+    width: 50%; /* Resize the image to 50% of its original width */
+    max-width: 400px; /* Ensure the image never exceeds 400px in width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 10px 20px;
+}
+
+td {
+    text-align: left;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #1b1d1b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(25, 26, 25, 0.5);
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: rgb(243, 234, 234);
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #33ce2d;
+}
+
+/* Centering the Form Section */
+.center {
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .white-section {
+        width: 90%;
+    }
+
+    .attendance-image {
+        width: 150px;
+    }
+
+    table {
+        width: 100%;
+    }
+}

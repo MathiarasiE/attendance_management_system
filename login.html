@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/CSS.css') }}">
+</head>
+<body>
+    <div class="title-section">
+        <center>
+            <h1>K.S. RANGASAMY COLLEGE OF TECHNOLOGY</h1>
+            <h2>COMPUTER SCIENCE AND BUSINESS SYSTEMS</h2>
+            <h3>ATTENDANCE MANAGEMENT SYSTEM</h3>
+            <hr class="divider" >
+        </center>
+    </div>
+    
+    <div class="white-section">
+        <center>
+            <img src="{{ url_for('static', filename='images/attendance.jpg') }}" alt="Attendance Image">
+            
+            <form method="POST">
+                <table>
+                    <tr>
+                        <td>USER NAME</td>
+                        <td><input type="text" name="username" placeholder="Enter Your Name" required></td>
+                    </tr>
+                    <tr>
+                        <td>PASSWORD</td>
+                        <td><input type="password" name="password" placeholder="Enter Your Password" required></td>
+                    </tr>
+                </table>
+                <button type="submit" class="button">LOGIN</button>
+            </form>
+            {% if error %}
+                <div class="alert alert-danger">{{ error }}</div>
+            {% endif %}
+        </center>
+    </div>
+</body>
+</html>
